@@ -107,3 +107,19 @@ kolory = ['biały','czerwony','zielony','niebieski','czarny','fioletowy']
 #stwórz dwie tablice: parz i nieparz
 #do tablicy parz przypisz wszyskie wartości tablicy kolory z indeksami parzystmi
 #do tablicy nieparz przypisz wszyskie wartości tablicy kolory z indeksami nieparzystmi
+
+parz = kolory[::2]
+nieparz = kolory[1::2]
+
+print(parz)
+print(nieparz)
+
+w1 = "kajak"
+w2 = "pomarańcza"
+
+#wypisz litery w wyrazach odrotnie
+w11 = w1[::-1]
+w22 = w2[::-1]
+
+print(w1,"-",w11)
+print(w2,"-",w22)
