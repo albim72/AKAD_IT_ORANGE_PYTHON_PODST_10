@@ -55,7 +55,7 @@ rasa = ["buldog angielski","amstaf","pekińczyk"]
 rasa_cena = [7500,6500,4500]
 
 
-dodatek = [["rodesian","labrador"],[6000,4000]]
+dodatek = [["rodesian","labrador",str(45)],[6000,4000,True]]
 
 #konkatenacja list
 rasa = rasa + dodatek[0]
@@ -67,8 +67,40 @@ print(sklepzoo[0])
 print(sklepzoo[0][1],", cena:",sklepzoo[1][1],"zł")
 print(sklepzoo[0][0][0],", cena:",sklepzoo[1][0][0],"zł")
 
+print(rasa)
+rasa.sort()
+print(rasa)
 
+print(rasa_cena)
+rasa_cena.sort()
+print(rasa_cena)
 
+rasa_cena = rasa_cena * 3
+print(rasa_cena)
 
+litery = ['a','b','c','d','e','f','g','h']
 
+print("litery przed zmianą",litery)
+
+litery[2:7] = [99,102,33]
+
+print("litery po zmianie",litery)
+
+litery_m = litery
+litery_p = list(litery)
+litery_q = litery[:]
+
+print("litery przed zmianą",litery)
+print("litery_m przed zmianą",litery_m)
+print("litery_p przed zmianą",litery_p)
+print("litery_q przed zmianą",litery_q)
+
+litery [:] = [1002,1003,1114,1116]
+
+print("litery po zmianie",litery)
+print("litery_m po zmianie",litery_m)
+print("litery_p po zmianie",litery_p)
+print("litery_q po zmianie",litery_q)
+
+kolory = ['biały','czerwony','zielony','niebieski','czarny','fioletowy']
 
