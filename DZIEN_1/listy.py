@@ -104,3 +104,6 @@ print("litery_q po zmianie",litery_q)
 
 kolory = ['biały','czerwony','zielony','niebieski','czarny','fioletowy']
 
+#stwórz dwie tablice: parz i nieparz
+#do tablicy parz przypisz wszyskie wartości tablicy kolory z indeksami parzystmi
+#do tablicy nieparz przypisz wszyskie wartości tablicy kolory z indeksami nieparzystmi
