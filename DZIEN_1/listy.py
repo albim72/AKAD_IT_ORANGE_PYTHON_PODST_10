@@ -38,3 +38,6 @@ print(kraj)
 
 kraj.sort(reverse=True)
 print(kraj)
+
+
+liczby = [23,556,8,-99,112,0,456,13,56,45,9,-99,0,112,45,112,45,112,890]
