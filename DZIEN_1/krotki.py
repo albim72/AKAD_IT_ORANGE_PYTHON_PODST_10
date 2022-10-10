@@ -27,9 +27,28 @@ obiekt = "Obiekt56",56,True,0.098,"Kraków",19
 mojakrotka = tuple(obiekt)
 print(mojakrotka)
 
-#Zmodyfikuj krotkę: usuń wartość 56, wstaw wartość 101 na pozycji 3, 
+#Zmodyfikuj krotkę: usuń wartość 56, wstaw wartość 101 na pozycji 3,
 #zamień "Kraków" na "Toruń, wsstaw na końcu wartość False
 
 #zamień krotkę na listę mojalista
 #zmodyfikuj
 #zamień listę na krotkę mojakrotka
+
+mojalista = list(mojakrotka)
+mojalista.remove(56)
+mojalista.insert(3,101)
+u = mojalista.index("Kraków")
+mojalista[u] = "Toruń"
+mojalista.append(False)
+
+mojakrotka = tuple(mojalista)
+print(mojakrotka)
+
+sam = ("audi","Q7",4.6,2020,19800)
+(marka,model,poj,rocznik,przebieg) = sam
+
+print(marka)
+print(model)
+print(poj)
+print(rocznik)
+print(przebieg)
