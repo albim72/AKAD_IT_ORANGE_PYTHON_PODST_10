@@ -39,3 +39,14 @@ def policz(a,b,x):
 
 print(policz(3,6,2))
 print(f)
+
+#czwarta funkcja
+
+def miasta(miasto3,miasto2="Sosnowiec",miasto1="Kraków"):
+    print(f"Miasto tygodnia: {miasto1}, grugie miejsce: {miasto2}, trzecie miejsce: {miasto3}")
+
+miasta("Katowice","Wrocław","Toruń")
+miasta("Katowice","Wrocław")
+miasta("Katowice")
+miasta("Rzeszów",None,"Gdańsk")
+miasta("Rzeszów",miasto1="Gdańsk")
