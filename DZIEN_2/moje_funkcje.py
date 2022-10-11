@@ -50,3 +50,13 @@ miasta("Katowice","Wrocław")
 miasta("Katowice")
 miasta("Rzeszów",None,"Gdańsk")
 miasta("Rzeszów",miasto1="Gdańsk")
+
+print("____________________________________________________________")
+#piąta funkcja
+def zamki(nr_tygodnia,*zamek,rabat):
+    print(f"Ranking tygodnia nr: {nr_tygodnia} --> Zamek tygodnia: {zamek[0]} -> rabat: {rabat} zł, drugie miejsce: {zamek[1]}, trzecie miejsce: {zamek[2]}")
+
+zamki(12,"Malbork","Czersk","Będzin","Ogrodzieniec",rabat=20)
+zamki(13,"Janowiec","Czorsztyn","Malbork","Czersk","Będzin","Chojnik","Ogrodzieniec",rabat=5)
+
+
