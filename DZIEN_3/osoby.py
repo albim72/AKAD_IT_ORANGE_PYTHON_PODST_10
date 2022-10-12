@@ -24,11 +24,27 @@ class Osoba:
     def czypracownik(self):
         return False
 
+    def bmi(self):
+        return self.waga/(self.wzrost/100)**2
+
+    def opis_bmi(self):
+        if self.bmi()<18.5:
+            return "niedowaga"
+        elif self.bmi()<=25:
+            return "waga prawidłowa"
+        elif self.bmi()<=30:
+            return "nadwaga"
+        else:
+            return "otyłość"
+
+
+
 
 os1 = Osoba("Jan",38,89,174)
 os1.print_osoba()
 print(f"wiek za 10 lat: {os1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({os1.czypracownik()})")
+print(f"wynik bmi = {os1.bmi():.2f}, opis: {os1.opis_bmi()}")
 
 print("________________________________________________________")
 
@@ -37,6 +53,7 @@ os2.kolor_oczu = "niebieskie"
 os2.print_osoba()
 print(f"wiek za 10 lat: {os2.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({os2.czypracownik()})")
+print(f"wynik bmi = {os2.bmi():.2f}, opis: {os2.opis_bmi()}")
 
 print("________________________________________________________")
 
@@ -129,6 +146,10 @@ s3.print_student()
 s3.infosport()
 print(f"wiek za 10 lat: {s3.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({s3.czypracownik()})")
+print(f"wynik bmi = {s3.bmi():.2f}, opis: {s3.opis_bmi()}")
+
+
+
 
 
 
