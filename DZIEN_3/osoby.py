@@ -66,6 +66,21 @@ print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
 
 print("________________________________________________________")
 
+class Sport:
+    
+    def __init__(self,dyscyplina,lata_upr,best_wynik):
+        self.dyscyplina = dyscyplina
+        self.lata_upr = lata_upr
+        self.best_wynik = best_wynik
+        
+    def infosport(self):
+        print(f"Dyscyplina: {self.dyscyplina}, czas uprawiania[lata]: {self.lata_upr}, życiówka: {self.best_wynik}")
+        
+        
+class Ekstra:
+    pass
+
+
 
 
 
