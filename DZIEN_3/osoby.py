@@ -38,13 +38,20 @@ class Osoba:
             return "otyłość"
 
 
-
+    def policz_ppm(self,plec):
+        if plec == "k":
+            return 655.1 + 9.563*self.waga +1.85*self.wzrost - 4.676*self.wiek
+        elif plec == "m":
+            return 66.5 + 13.75 * self.waga + 5.003 * self.wzrost - 6.775 * self.wiek
+        else:
+            return "k- kobieta, m-mężczyzna -> wpisz poprawnie!"
 
 os1 = Osoba("Jan",38,89,174)
 os1.print_osoba()
 print(f"wiek za 10 lat: {os1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({os1.czypracownik()})")
 print(f"wynik bmi = {os1.bmi():.2f}, opis: {os1.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {os1.policz_ppm('m'):.2f} kcal")
 
 print("________________________________________________________")
 
@@ -54,6 +61,7 @@ os2.print_osoba()
 print(f"wiek za 10 lat: {os2.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({os2.czypracownik()})")
 print(f"wynik bmi = {os2.bmi():.2f}, opis: {os2.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {os2.policz_ppm('k'):.2f} kcal")
 
 print("________________________________________________________")
 
@@ -147,6 +155,7 @@ s3.infosport()
 print(f"wiek za 10 lat: {s3.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({s3.czypracownik()})")
 print(f"wynik bmi = {s3.bmi():.2f}, opis: {s3.opis_bmi()}")
+print(f"zapotrzebowanie energetyczne: {s3.policz_ppm('m'):.2f} kcal")
 
 
 
