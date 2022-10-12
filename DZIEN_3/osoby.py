@@ -116,11 +116,19 @@ s2.print_student()
 print(f"wiek za 10 lat: {s2.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({s2.czypracownik()})")
 
-
-
 #utwórz nowy obiekt klasy Student (s3) który posiada cechy osoby i studenta, nie jest pracownikiem ale jest sportowcem
 
 
+print("________________________________________________________")
+
+
+s3 = Student("Robert",22,83,181,45435,"Nauki Społeczne","Socjologia",3,
+             dyscyplina="biegi ultra", lata_upr=5, best_wynik="102km 19h 56m 45s")
+s3.print_osoba()
+s3.print_student()
+s3.infosport()
+print(f"wiek za 10 lat: {s3.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({s3.czypracownik()})")
 
 
 
