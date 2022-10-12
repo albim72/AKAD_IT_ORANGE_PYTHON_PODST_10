@@ -118,7 +118,7 @@ print(f"czy osoba jest pracownikiem? ({s2.czypracownik()})")
 
 
 
-
+#utwórz nowy obiekt klasy Student (s3) który posiada cechy osoby i studenta, nie jest pracownikiem ale jest sportowcem
 
 
 
