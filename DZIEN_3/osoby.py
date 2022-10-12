@@ -67,18 +67,58 @@ print(f"czy osoba jest pracownikiem? ({p1.czypracownik()})")
 print("________________________________________________________")
 
 class Sport:
-    
+
     def __init__(self,dyscyplina,lata_upr,best_wynik):
         self.dyscyplina = dyscyplina
         self.lata_upr = lata_upr
         self.best_wynik = best_wynik
-        
+
     def infosport(self):
         print(f"Dyscyplina: {self.dyscyplina}, czas uprawiania[lata]: {self.lata_upr}, życiówka: {self.best_wynik}")
-        
-        
+
+
 class Ekstra:
     pass
+
+class Student(Pracownik,Sport,Ekstra):
+
+    #konstruktor z wielodziedziczeniem
+    def __init__(self,imie,wiek,waga,wzrost,id_studenta,wydzial,kierunek,rok_stud,
+                 firma="",stanowisko="",latapracy="",wynagrodzenie="",dyscyplina="",lata_upr="",best_wynik=""):
+        Pracownik.__init__(self,imie,wiek,waga,wzrost,firma,stanowisko,latapracy,wynagrodzenie)
+        Sport.__init__(self,dyscyplina,lata_upr,best_wynik)
+        self.id_studenta = id_studenta
+        self.wydzial = wydzial
+        self.kierunek = kierunek
+        self.rok_stud = rok_stud
+
+    def print_student(self):
+        print(f"dane studenta (id: {self.id_studenta}, wydział: {self.wydzial}, kierunek: {self.kierunek}, "
+              f"rok studiów: {self.rok_stud}")
+
+    def czypracownik(self):
+        return self.firma != ""
+
+s1 = Student("Olaf",22,77,178,3454,"Budowlany","konstrukcja mostów",3)
+s1.print_osoba()
+s1.print_student()
+print(f"wiek za 10 lat: {s1.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({s1.czypracownik()})")
+
+
+print("________________________________________________________")
+
+
+s2 = Student("Olga",23,68,179,63455,"Automatyka, Elektronika i Infroamtyka","Informamtyka",4,
+             "XYZ","młodszy programista",1,2600)
+s2.print_osoba()
+s2.print_student()
+print(f"wiek za 10 lat: {s2.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({s2.czypracownik()})")
+
+
+
+
 
 
 
